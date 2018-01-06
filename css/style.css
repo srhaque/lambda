@@ -1,0 +1,493 @@
+/* 
+    Created on  : Jan 06, 2018, 1:12:42 AM
+    Author      : Saki Rezwanul Haque
+    Batch       : CTG Online 07 (Responsive Web Design)
+
+*/
+
+/* for mobile responsiveness */
+    
+@media (min-width: 767px) {  }
+
+/* for tab responsiveness */
+@media (max-width: 1200px) and (min-width: 767px) {  }
+
+/* for desktop responsiveness */
+@media (min-width: 1200px){  }
+
+
+/* Styling starts from here */
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+/* slider part starts here */
+
+.sliderWrapper {
+    background: url('../images/topback.jpg') no-repeat fixed center;
+    background-size: cover;
+    min-height: 750px;
+}
+
+.navbar {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-right > li > a {
+    color: #fff;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 20px;
+    padding-top: 45px;
+}
+
+.navbar-default .navbar-right > li > a:hover {
+    color: #efdeb3;
+}
+
+.navbar-default .navbar-right > li > a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color:#efdeb3;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.3s,transform 0.2s ease-out;
+}
+
+.navbar-default .navbar-right > li > a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+    background-color: goldenrod;
+    border: 1px solid wheat;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: wheat;
+}
+
+.fa {
+    color: #ccb02b;
+}
+
+.fa:hover {
+   color: #8a4e05;
+}
+
+.navbar-header, .navbar-collapse {
+    margin-bottom: 80px;
+}
+
+.rTwo {
+    padding-top: 18px;
+}
+
+.rTwo h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 78px;
+    color: #f1f0f0;
+    margin: 0;
+    white-space: pre-line;
+}
+
+.rTwo img {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.btn-default {
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.7;
+    padding: 15px 25px;
+    border: 2px solid #000;
+    border-radius: 0px;
+    margin: 15px;
+}
+
+.bTwo {
+    background-color: #c9ae45;
+    border-color:#c9ae45;
+}
+
+.bOne:hover {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+.bTwo:hover {
+    background: transparent;
+    color:white;
+    border: 2px solid #c9ae45;
+}
+
+/* chef testimony part starts here */
+
+.chefWrapper {
+    background: url("../images/patternback.png") no-repeat fixed center;
+    background-size: cover;
+}
+
+.rThree {
+    padding: 5%;
+}
+
+.chefTst {
+    padding: 3% 0;
+}
+.chfCom h1 {
+    font-family: 'Yeseva One', cursive;
+    color: #d5ab2d;
+    font-size: 36px;
+}
+.chfp1 {
+    width: 35%;
+    margin-bottom: 20px;
+}
+.chfCom p {
+    font-size: 15px;
+    white-space: pre-line;
+}
+
+.chfp2 {
+    width: 35%;
+    margin-top: 20px;
+}
+
+/* ingredients part stars here */
+
+.ingredWrapper {
+    background: url('../images/greenback.jpg') no-repeat fixed center;
+    background-size: cover;
+    min-height: 755px;
+}
+
+.ingredWrapper > .row > .ingredContainer > .ingredBg {
+    background: #000;
+    opacity: 0.6;
+    margin-top: 158px;
+    margin-bottom: 158px;
+}
+
+.ingredWrapper > .row > .ingredContainer  >.ingredBg > .ingredContent {
+    margin: 50px 0 40px;
+}
+
+.ingredWrapper > .row > .ingredContainer > .ingredBg > .ingredContent > h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    color: white;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+.ingredWrapper > .row > .ingredContainer > .ingredBg > .ingredContent > img {
+    width: 30%;
+    margin-top: 15px;
+}
+
+.ingredWrapper > .row > .ingredContainer > .ingredBg > .ingredContent > p {
+    font-size: 15px;
+    color:#c0bbb7;
+    white-space: pre-line;
+    margin-bottom: 20px;
+}
+
+.ingredWrapper > .row > .ingredContainer > .ingredBg > .ingredContent > .inImg > img {
+    margin-bottom: 15px;
+    transform: scale(1.0,1.0);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.ingredWrapper > .row > .ingredContainer > .ingredBg > .ingredContent > .inImg > img:hover {
+    -webkit-transition: all 1.3s;
+    -moz-transition: all 1.3s;
+    transition: all 1.3s;
+    transform: scale(1.1,1.1);
+}
+
+/* menu stars here */
+
+.menuWrapper {
+    background: url('../images/blockpattern.png') fixed center;
+    background-size: cover;
+    min-height: 1000px;
+    padding-bottom: 80px;
+}
+
+.menuWrapper > .row .menuItem {
+    padding: 20px;
+}
+
+.menuWrapper > .row .menuItem > h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #d5ab2d;
+    padding-top:100px; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.menuWrapper > .row .menuItem > img {
+    width: 40%;
+}
+
+.menuWrapper > .row .menuItem > .menu h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;
+    color: #d5ab2d;
+    text-align: left;
+    border-bottom: 1px ridge #e2d8b0;
+    padding-top: 20px;
+}
+
+.menuWrapper > .row .menuItem > .menu h2 > span {
+    float: right;
+}
+
+.menuWrapper > .row .menuItem > .menu p {
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 24px;
+}
+
+.menuItem > .menu > .menuItemBr {
+    padding: 0 10px;
+    border: 1px solid #e2d8b0;
+    transform: scale(1.0,1.0);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.menuItem > .menu > .menuItemBr:hover {
+    -webkit-transition: all 1.2s;
+    -moz-transition: all 1.2s;
+    transition: all 1.2s;
+    transform: scale(1.1,1.1);
+}
+
+
+/* review stars here */
+
+.reviewWrapper {
+    background: url('../images/sik-kabab.png') fixed center;
+    background-size: cover;
+    min-height: 760px;
+}
+.reviewWrapper > .row > .reviewContainer {
+    margin-top: 145px;
+    margin-bottom: 145px;
+}
+
+.reviewWrapper > .row > .reviewContainer > .reviewBg > .reviewContent {
+    background: #000;
+    opacity: 0.8;
+}
+
+.reviewWrapper > .row .reviewContent > h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 34px;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.reviewWrapper > .row .reviewContent > img {
+    width: 30%;
+}
+
+.reviewWrapper > .row .reviewContent > p {
+    font-family: 'Slabo 27px', serif;
+    font-size: 19px;
+    color: #fff;
+    line-height: 2;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+/* booking starts here */
+
+.bookingWrapper {
+    background: url('../images/patternback.png') fixed center;
+    background-size: cover;
+    min-height: 780px;
+}
+
+.bookingWrapper > .row > .bookingContainer {
+    margin-top: 135px;
+    margin-bottom: 100px;
+}
+
+.bookingWrapper > .row > .bookingContainer > .bookingLeft > img {
+    width: 400px;
+    height: 516px;
+    margin-bottom: 40px;
+}
+
+.bookingContainer > .bookingRight > .rightItemOne > h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    color: #d5ab2d;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.bookingContainer > .bookingRight > .rightItemOne > img {
+    width: 50%;
+    margin-bottom: 18px;
+}
+
+.bookingContainer > .bookingRight > .rightItemOne > p {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.bookingContainer > .bookingRight > .rightItemTwo > p {
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.bookingRight > .rightItemTwo > form .form-group label {
+    color: #cc9900;
+}
+.bookingRight > .rightItemTwo > form .form-group .input-group-addon {
+    border: 1px solid #cc9900;
+}
+
+.bookingRight > .rightItemTwo > form .form-group .form-control {
+    font-size: 12px;
+    border: 1px solid #cc9900;
+    border-left: none;
+    
+}
+
+.bookingRight > .rightItemTwo > form > .bThree {
+    background: #cc9900;
+    opacity: 1;
+    padding: 6px 55px;
+    border-color:#cc9900;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.bookingRight > .rightItemTwo > form > .bThree:hover {
+    background: #4cae4c;
+    color: #fff;
+    border-color: #4cae4c;
+}
+
+/* info starts here */
+
+.infoWrapper {
+    background: #191919;
+    min-height: 322px;
+}
+
+.infoWrapper > .row > .infoContainer {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.infoWrapper > .row > .infoContainer h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #fff;
+    margin: 25px 0 0;
+}
+
+.infoWrapper > .row > .infoContainer .infoImg {
+    width: 40%;
+    padding: 15px;
+}
+
+.infoWrapper > .row > .infoContainer .infoImgT {
+    width: 55%;
+    padding: 15px;
+}
+
+.infoWrapper > .row > .infoContainer p {
+    font-size: 15px;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.infoCenter > .creditIcons .fa {
+    color: #d5ab2d;
+    padding: 5px;
+    transform: scale(1.0,1.0);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.infoCenter > .creditIcons .fa:hover {
+    -webkit-transition: all 1.1s;
+    -moz-transition: all 1.1s;
+    transition: all 1.1s;
+    transform: scale(1.5,1.5);
+}
+
+.infoRight > .socialIcons .fa {
+    color: #d5ab2d;
+    padding: 5px;
+    transform: scale(1.0,1.0);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.infoRight > .socialIcons .fa:hover {
+    -webkit-transition: all 1.1s;
+    -moz-transition: all 1.1s;
+    transition: all 1.1s;
+    transform: scale(1.5,1.5);
+}
+
+/* footer stars here */
+
+.footerWrapper {
+    background: #d5ab2d;
+    min-height: 100px;
+}
+
+.footerContainer {
+    margin: 40px 0;
+}
+
+.footerContainer p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
